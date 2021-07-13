@@ -24,11 +24,11 @@ public class Customer {
 				+ " | Гражданство: " + citizenship + " | Номер карты: " + card + " | Номер договора: " + account + " }\n";
 	}
 
-	public void print() {
+	public void print() {//этот метод здесь не может находиться, пересмотри последние два занятия
 		System.out.println(toString());
 	}
 
-	public void setId(int i) {
+	public void setId(int i) {// техническое id у аккаунта обычно не меняют
 		id = i;
 	}
 
@@ -82,5 +82,5 @@ public class Customer {
 
 	public long getBankAccount() {
 		return account;
-	}
+	} // equals, hashCode, toString ?
 }
